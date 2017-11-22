@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+ 
 
-  get 'users/new'
+  resources :users, only: [:new, :create]
+  get '/signup', to: 'users#new'
+  root to: 'blog_page#blogpage'
 
-  get 'users/show'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :session, only: [:create]
+  get '/signin', to: 'sessions#new'
+  post  '/logout', to: 'sessions#logout'
+
 end
