@@ -1,3 +1,43 @@
-// Place all the styles related to the users controller here.
+// Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ #up {
+   background-color: green;
+ }
+h1, h2 , h3{
+  font-style: italic;
+  color: yellow;
+}
+
+a {
+  font-style: italic;
+  color: yellow;
+}
+
+ #submit {
+   color: white;
+   border: 1px solid black;
+   border-radius:  5px;
+   background-color: black;
+ }
+
+
+ #submit:hover {
+ 
+   border-radius:  7px;
+   background-color: orange;
+ }
+
+label {
+font-style: italic;
+color: yellow;
+}
+#username{
+  background-color: orange;
+  border-radius: 10px;
+}
+
+#password{
+  background-color: orange;
+  border-radius: 10px;
+}

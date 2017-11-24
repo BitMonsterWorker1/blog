@@ -1,5 +1,0 @@
-class BlogPage < ApplicationRecord
-
-
-
-end
